@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>S.o.d Garic</title>
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=device-width,initial-scale=1">
+
+<!--CDN za Bootstrap-->
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!--CDN za Jquery-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!--CDN za Bootstrap-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--CDN za Icone-->
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<!--CDN za AWESOME font-->
+<link rel="stylesheet"
+ href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+<!--CDN za Google Fonts Montserrat & Lato-->
+
+<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+<!--main.css-->
+
+<link rel="stylesheet" href="./main.css">
+
+<!--main.js-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage'],#Onama a[href='#Kontakt']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+$(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+  
+  
+</script>
+
+</head>
+
+<!--___________________________________________________________-->
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<div class="jumbotron text-center">
+		<h1>S.o.d. Garic</h1>
+		<h2>Profesionalna radionica za zavarivanje</h2>
+	
+	<!--email-->
+			<form class="form-inline">
+				<input type="email" class="form-control" size="50" placeholder="Vas Email">
+			<button type="button" class="btn btn-primary">Posalji zahtjev</button>
+			</form>
+	</div>
+	<!--_____-->
+	<!--Kontejneri-->
+	<div  id="Onama" class="container-fluid text-center">
+			<div class="row slideanim">
+				<div class="col-sm-8">
+		<h2>O nama</h2>
+		<h4>Mi smo profesionalna radionica koja se bavi zavarivanjem,tokarenjem,masinbravarijom</h4>
+		<a href="#Kontakt"><button class="btn btn-default btn-lg">Kontaktirajte nas</button></a>				
+			</div>
+			<div class="col-sm-4">
+			<span><i class="fa fa-cogs slow-spin" style="font-size:200px"></i>
+			</span>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg-grey text-center ">
+	<div class="row slideanim">
+	<div class="col-sm-6">
+	<span class="glyphicon glyphicon-globe logo slideanim"></span>
+	</div>
+	<div class="col-sm-6">
+	<h2>Nase vrijednosti :</h2>
+	<h4><strong>1.</strong>Kvalitet je najbolja reklama</h4>
+	<h4><strong>2.</strong>Vratiti ugled nasoj industriji</h4>
+	</div>	
+	</div>
+	<!--_____-->
+	<!--SERVIS-->
+	<div id="Servisi" class="container-fluid ">
+	<h2>SERVISI</h2>
+	<h4>Sta nudimo</h4>
+	<br>
+	<div class="row">
+	<div class="col-sm-4">
+	<span class="glyphicon glyphicon-wrench logo slideanim"></span>
+	<h4>ZAVARIVANJE</h4>
+	<ul>	
+	<li>Mag zavarivanje</li>
+	<li>Tig zavarivanje</li>
+	<li>Elektrolucno zavarivanje</li>
+	<li>Autogeno zavarivanje</li>
+	</ul>
+	</div>
+	<div class="col-sm-4">
+	<span><i class="fa fa-cog logo slideanim"></i></span>
+	<h4>ODRZAVANJE VOZILA</h4>
+	<ul>	
+		<li>Odrzavanje automobila</a>
+		<li>Odrzavanje kamiona</li>
+		<li>Odrzavanje bagera</li>
+		<li>Izrada masinskih konstrukcija</li>
+		<li>Odrzavanje masinskih elemenata</li>
+		<li>Masinbravarija</li>
+	</ul>
+	</div>
+	<div class="col-sm-4">
+	<span class="glyphicon glyphicon-lock logo slideanim"></span>
+	<h4>BRAVARIJA</h4>
+	<ul>
+	<li>Izrada kovanih ograda</li>
+	<li>Izrada inox ograda</li>
+	<li>Izrada kapija i vrata sa pratecom automatikom</li>
+	<li>Izrada aluminijskih i celicnih konstrukcija</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</br>
+	</div>
+	<!--______-->
+	<!--Galerija-->
+	<div id="Galerija" class="container-fluid text-center">
+	<h2>GALERIJA</h2>
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/2.JPG" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/1.JPG" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/3.JPG" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/4.JPG" /></div>
+    	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/5.JPG"./slike/2.JPG" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/6.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/7.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/8.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/9.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/10.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/11.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/12.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/13.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/14.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/15.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/16.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/17.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/18.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/19.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/21.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/20.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/22.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/22.JPG" /></div>
+	
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/24.JPG" /></div>
+	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive slideanim" src="./slike/25.JPG" /></div>
+	
+    </div>
+</div>
+	<!--________-->
+
+	<!--Kontakt-->
+	 <div id="Kontakt" class="container-fluid bg-grey text-center">
+  <h2 class="text-center">KONTAKT</h2>
+  <div class="row slideanim">
+    <div class="col-sm-5">
+      <p>Kontaktirajte nas i obratiti cemo Vam se u roku 24h.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Sarajevo,Vogosca,Blagovac 1/5</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +387 61 410 459</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> s.o.d.garic@gmail.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Vase Ime" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Vas Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Komentar" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Posalji</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	<!--_______-->
+	<!--LOKACIJA-->
+	 <!-- Set height and width with CSS -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(43.904812, 18.359104);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:11,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+	<!--_______-->
+	<!--NAVBAR-->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-right">
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	<span class="icon-bar" id="iconbar"></span>
+	<span class="icon-bar" id="iconbar"></span>
+	<span class="icon-bar" id="iconbar"></span>
+	</button>
+	<a class="navbar-brand" href="#myPage">S.o.d. Garic </a>
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="#Onama">O NAMA</a></li>
+		<li><a href="#Servisi">SERVISI</a></li>
+		<li><a href="#Galerija">GALERIJA</a></li>
+		<li><a href="#Kontakt">KONTAKT</a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+</nav>
+	<!--_______-->
+	<!--FOOTER-->
+<footer class="container-fluid text-center" style="background-color:#727678; color:#ffffff">
+<a href="#myPage" title="To Top">
+<span class="glyphicon glyphicon-chevron-up"></span></a>
+<p>&copy; Sva prava zadrzana od strane S.o.d. Garic 2016.g </p>
+</footer>
+	<!--_______-->
+</body>
+
+<!--___________________________________________________________-->
+</html>

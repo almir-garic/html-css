@@ -1,0 +1,159 @@
+body{
+	font: 400 15px Lato,sans-serif;
+	line-height: 1.8;
+	color: #818181;
+	
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+.jumbotron {
+		font-family: Montserrat, sans-serif;
+		background-image: url("./slike/background.JPG");
+		color: #ffffff;
+		padding: 250px 25px;
+}
+
+.jumbotron h2{
+		color:#ffffff;
+	}
+
+.container-fluid{
+		padding:60px 25px;
+		background-color:#FFFFFF;
+}
+.bg-grey{
+		background-color:#f6f6f6;
+		
+}
+
+.logo{
+		font-size:200px;
+}
+@media screen and (max-width:768px){
+	.col-sm-4{
+		text-align:center;
+		margin:25px 0;
+	}
+}
+.logo-small{
+		color:#8E989C;
+		font-size: 50px;
+		
+}
+
+
+.logo {
+		color:#8E989C;
+		font-size: 150px;
+}
+
+.slow-spin{
+		-webkit-animation: fa-spin 6s infinit linear;
+		animation:fa-spin 6s infinite linear;
+		color:#8E989C;
+}
+
+.img-responsive {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+}
+
+.img-responsive :hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ 
+}
+
+footer .glyhicon {
+		font-size: 20px;
+		margin-bottom:20px;
+		color: #4BAAC9;
+
+}
+
+#iconbar{
+		background-color: #ffffff;
+}
+
+.navbar {
+    font-family:Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #727678;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+
